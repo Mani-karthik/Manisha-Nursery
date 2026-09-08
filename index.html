@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manisha Nursery | Plants & Garden Care</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+
+        <div class="logo-icon">
+            🌱
+        </div>
+
+        <div>
+            <strong>Manisha</strong>
+            <span>NURSERY</span>
+        </div>
+
+    </a>
+
+    <nav id="nav-menu">
+
+        <a href="#home">HOME</a>
+
+        <a href="#products">PLANTS</a>
+
+        <a href="#categories">CATEGORIES</a>
+
+        <a href="#about">ABOUT</a>
+
+        <a href="#contact">CONTACT</a>
+
+        <a href="#cart" class="cart-link">
+            <i class="fa-solid fa-cart-shopping"></i>
+            CART
+            <span id="cart-count">0</span>
+        </a>
+
+    </nav>
+
+    <button class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            🌿 MANISHA NURSERY · GROWN WITH CARE
+        </p>
+
+        <h1>
+            మీ ఇంటి కోసం
+            <span>నాణ్యమైన మొక్కలు</span>
+        </h1>
+
+        <p class="hero-text">
+            ఇండోర్, అవుట్‌డోర్, ఫ్రూట్ &amp; ఫ్లవర్
+            ప్లాంట్స్‌ను మీ ఇంటికే ఆర్డర్ చేసుకోండి.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products" class="btn primary-btn">
+                మొక్కలు చూడండి
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="https://wa.me/916300271143"
+               target="_blank"
+               class="btn whatsapp-btn">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp చేయండి
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="feature">
+
+        <i class="fa-solid fa-seedling"></i>
+
+        <div>
+            <h3>Quality Plants</h3>
+            <p>Fresh &amp; Healthy</p>
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <i class="fa-solid fa-truck"></i>
+
+        <div>
+            <h3>Home Delivery</h3>
+            <p>Safe &amp; Secure</p>
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <i class="fa-solid fa-shield-heart"></i>
+
+        <div>
+            <h3>Best Prices</h3>
+            <p>Affordable Always</p>
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <i class="fa-solid fa-leaf"></i>
+
+        <div>
+            <h3>Expert Support</h3>
+            <p>Plant Care Guidance</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section" id="products">
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="section-label">
+                🌿 MANISHA NURSERY
+            </p>
+
+            <h2>Featured Plants</h2>
+
+            <p>
+                మీ ఇంటిని పచ్చదనంతో నింపే అందమైన మొక్కలు
+            </p>
+
+        </div>
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="మొక్కను search చేయండి..."
+            >
+
+        </div>
+
+    </div>
+
+
+    <div class="category-buttons">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="indoor">
+            Indoor
+        </button>
+
+        <button class="filter-btn" data-filter="flower">
+            Flower
+        </button>
+
+        <button class="filter-btn" data-filter="fruit">
+            Fruit
+        </button>
+
+        <button class="filter-btn" data-filter="outdoor">
+            Outdoor
+        </button>
+
+    </div>
+
+
+    <div class="product-grid" id="product-list">
+
+        <!-- Products JavaScript ద్వారా వస్తాయి -->
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories-section" id="categories">
+
+    <div class="center-heading">
+
+        <p class="section-label">
+            🌱 SHOP BY CATEGORY
+        </p>
+
+        <h2>మీకు కావాల్సిన ప్రతిదీ</h2>
+
+        <p>
+            Everything you need for a greener space
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <div class="category-card" data-category="indoor">
+
+            <div class="category-icon">
+                🌿
+            </div>
+
+            <h3>Plants</h3>
+
+            <p>Indoor &amp; Outdoor Plants</p>
+
+            <span>
+                Explore →
+            </span>
+
+        </div>
+
+
+        <div class="category-card" data-category="pots">
+
+            <div class="category-icon">
+                🪴
+            </div>
+
+            <h3>Pots &amp; Planters</h3>
+
+            <p>Beautiful Plant Pots</p>
+
+            <span>
+                Explore →
+            </span>
+
+        </div>
+
+
+        <div class="category-card" data-category="decor">
+
+            <div class="category-icon">
+                🏡
+            </div>
+
+            <h3>Garden Decor</h3>
+
+            <p>Make your garden beautiful</p>
+
+            <span>
+                Explore →
+            </span>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                🪨
+            </div>
+
+            <h3>Pebbles &amp; Sand</h3>
+
+            <p>Premium Garden Materials</p>
+
+            <span>
+                Explore →
+            </span>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                🌱
+            </div>
+
+            <h3>Plant Care</h3>
+
+            <p>Fertilizers &amp; Care</p>
+
+            <span>
+                Explore →
+            </span>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                🌾
+            </div>
+
+            <h3>Seeds</h3>
+
+            <p>Grow your own plants</p>
+
+            <span>
+                Explore →
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="about-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1000&q=80"
+        alt="Manisha Nursery">
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="section-label">
+            🌿 WHY CHOOSE US?
+        </p>
+
+        <h2>
+            ఎందుకు
+            <span>Manisha Nursery?</span>
+        </h2>
+
+        <p>
+            మీ ఇంటికి మరియు గార్డెన్‌కు సరిపోయే
+            నాణ్యమైన మొక్కలను అందించడమే మా లక్ష్యం.
+        </p>
+
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                Wide range of Indoor &amp; Outdoor Plants
+            </li>
+
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                Premium quality pots &amp; planters
+            </li>
+
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                Expert plant care guidance
+            </li>
+
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                Affordable prices
+            </li>
+
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                Home delivery available
+            </li>
+
+        </ul>
+
+
+        <a href="https://wa.me/916300271143"
+           target="_blank"
+           class="btn primary-btn">
+
+            Learn More
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div>
+
+        <p>MANISHA NURSERY</p>
+
+        <h2>
+            మీ ఇంటిని పచ్చదనంతో నింపండి 🌿
+        </h2>
+
+        <p>
+            మీకు కావాల్సిన మొక్కల కోసం ఇప్పుడే మమ్మల్ని సంప్రదించండి.
+        </p>
+
+        <a
+        href="https://wa.me/916300271143?text=నమస్కారం%20Manisha%20Nursery%2C%20నాకు%20మొక్కల%20గురించి%20వివరాలు%20కావాలి."
+        target="_blank"
+        class="cta-btn">
+
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsAppలో అడగండి
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="footer-grid">
+
+        <div>
+
+            <div class="footer-logo">
+                🌱 Manisha Nursery
+            </div>
+
+            <p>
+                మీ ఇంటిని పచ్చదనంతో నింపడానికి
+                నాణ్యమైన మొక్కలు.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#products">Plants</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+                📞 +91 63002 71143
+            </p>
+
+            <a
+            href="https://wa.me/916300271143"
+            target="_blank">
+
+                💬 WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Manisha Nursery.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART ================= -->
+
+<div class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>
+            🛒 Your Cart
+        </h2>
+
+        <button id="close-cart">
+            ×
+        </button>
+
+    </div>
+
+    <div id="cart-items">
+
+        <p class="empty-cart">
+            Your cart is empty 🌱
+        </p>
+
+    </div>
+
+    <div class="cart-bottom">
+
+        <h3>
+            Total:
+            ₹<span id="cart-total">0</span>
+        </h3>
+
+        <a
+        href="https://wa.me/916300271143"
+        target="_blank"
+        class="checkout-btn">
+
+            Order on WhatsApp
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="cart-overlay" id="cart-overlay"></div>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+href="https://wa.me/916300271143?text=నమస్కారం%20Manisha%20Nursery%2C%20నాకు%20మొక్కల%20గురించి%20వివరాలు%20కావాలి."
+target="_blank"
+class="whatsapp-float"
+aria-label="WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
